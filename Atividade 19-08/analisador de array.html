@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Analisador de Array</title>
+</head>
+<body>
+    <h1>Atividade Baldez</h1>
+    <script>
+        let numeros = [10, 23, -45, 67, 89, -12, 34, 56, -78, -90];
+        let somaDosPares = 0;
+        let contadorDeImpares = 0;
+        let maiorNumero = numeros[0];
+        let menorNumero = numeros[0];
+
+        alert("Bem-vindo ao Analisador de Array!");
+
+        for (let i = 0; i < numeros.length; i++) {
+            let numero = numeros[i];
+            if (numero % 2 === 0) {
+                somaDosPares += numero;
+            } else {
+                contadorDeImpares++;
+            }
+            if (numero > maiorNumero) {
+                maiorNumero = numero;
+            }
+            if (numero < menorNumero) {
+                menorNumero = numero;
+            }
+        }
+
+        document.write("<h2> A soma dos numeros pares é: " + somaDosPares + "</h2>");
+        document.write("<h2> A quantidade de numeros impares é: " + contadorDeImpares + "</h2>");
+        document.write("<h2> O maior numero é: " + maiorNumero + "</h2>");
+        document.write("<h2> O menor numero é: " + menorNumero + "</h2>");
+    </script>
+</body>
+</html>

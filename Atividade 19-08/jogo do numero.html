@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Validador de Senha</title>
+    </head>
+    
+    <bod>
+        <h1>Atividade Baldez</h1>
+        <script>
+            numeroAleatório = Math.floor(Math.random() * 100) + 1;
+            numeroSecreto = 39;
+            tentativas = 5;
+            while (tentativas >0)
+        {
+            let palpite = parseInt(prompt("Adivinhe o número entre 1 a 100, você tem "+tentativas+" tentativas restantes:"));
+            if (palpite == numeroSecreto) {
+                alert ("Parabéns! você advinhou o número! "+numeroSecreto);
+                break;
+            } else if (palpite < numeroSecreto) {
+                alert("O número é maior que " + palpite);
+                tentativas--;
+            } else {
+                alert("O número é menor que " + palpite);
+                tentativas--;
+            }
+        }
+        if (tentativas == 0)
+        {
+            document.write("<h2>Você não conseguiu advinhar o número secreto, tente novamente mais tarde.</h2>")
+        }
+        else
+        document.write("<h2>Você venceu o jogo!</h2>")
+        </script>
+    </bod>
+</html>
