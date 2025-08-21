@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+           <div class="context">
+        <h1>LogiCards</h1>
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+            </ul>
+    </div>
+        <link rel="stylesheet" href="site.css">
+        <script src = "perguntas.js"></script>
+        <charset="UTF-8">
+        <title>O Jogo lógico</title>
+    </head>
+<body>
+    <div class= "instrução"> 
+    <h1>Intruções:</h1>
+    <h2>Será feito perguntas sobre lógica computacional, a cada acerto, ganhará 1 ponto! você terá 3 opções e somente 1 será a correta.</h2>
+    <h2>Você terá 3 vidas, a cada erro, perderá 1 vida.</h2>
+    <h3>Insira seu nome:</h3>
+    <input type="text" id="nome" placeholder="Digite seu nome aqui">
+    <button onclick="iniciarJogo()">Iniciar Jogo</button>
+</div>
+<div id="nomeSessao"></div>
+<div id="pergunta"></div>
+<div id="opcoes"></div>
+<div id="pontuacao"></div>
+<div id="tempoRestante"></div>
+<button id="proxima">Próxima</button>
+
+</body>

@@ -1,0 +1,46 @@
+body {
+    background-color: hsl(263, 80%, 43%);
+    .context {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-position: top center;
+}
+.context h1{
+    font-family: 'Exo', sans-serif;
+    background-color: #362086;
+    text-align: center;
+    color: #ffffff;
+    font-size: 100px;
+}
+.instrução {
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    position: absolute;
+    bottom: -30px;
+    background-color: #7048ff;
+}
+.instrução h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    background-color: #7048ff;
+}
+.instrução h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    background-color: #7048ff
+}
+.instrução h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    background-color: #7048ff
+
+
+}@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+}
