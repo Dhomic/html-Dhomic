@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiCards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    
+    
+    <div class="bg-layer"></div>
+
+    <canvas id="bh-canvas"></canvas>
+
+    <img src="img/nameGame.png" alt="Nome do jogo - Logicards" class="game-logo" loading="lazy">
+    <div class="app">
+        <div id="tela-jogo" style="display: none;">
+        <h2 id="pergunta-carta">Qual a lógica por trás de um loop?</h2>
+        <div id="cartas-respostas">
+            <button class="carta-resposta"></button>
+            <button class="carta-resposta"></button>
+            <button class="carta-resposta"></button>
+        </div>
+    </div>
+
+     <div class="perfil"></div>
+
+    <img src="img/logoTipo.png" alt="Logo do Logicards" class="logo" loading="lazy">
+
+    <div class="menu-botoes">
+        <button id="botao-cadastro">Cadastro</button>
+        <button id="botao-comecar">Começar</button>
+        <button id="botao-mundo">Mundo</button>
+    </div>
+
+    <div id="perfil-jogador" style="display: none;">
+        <img id="icone-perfil" src="img/user-default.png" alt="Perfil" style="display: none;">
+        <div id="mini-aba-perfil" style="display: none;">
+            <p>Nome: <span id="nome-jogador"></span></p>
+            <p>Rank: <span id="rank-jogador">Aprendiz</span></p>
+            <p>Pontos: <span id="pontos-jogador">0</span></p>
+        </div>
+    </div>
+    
+    <div id="mini-aba-cadastro" style="display: none;">
+        <p>Digite seu nome:</p>
+        <p>Escolha sua foto de perfil:</p>
+<div class="fotos-perfil">
+    <img src="img/1.png" alt="Foto de perfil 1" class="foto-perfil" data-src="img/1.png">
+    <img src="img/2.png" alt="Foto de perfil 2" class="foto-perfil" data-src="img/2.png">
+    <img src="img/3.png" alt="Foto de perfil 3" class="foto-perfil" data-src="img/3.png">
+    <img src="img/4.png" alt="Foto de perfil 4" class="foto-perfil" data-src="img/4.png">
+    <img src="img/5.png" alt="Foto de perfil 5" class="foto-perfil" data-src="img/5.png">
+    <img src="img/6.png" alt="Foto de perfil 6" class="foto-perfil" data-src="img/6.png">
+    <img src="img/7.png" alt="Foto de perfil 7" class="foto-perfil" data-src="img/7.png">
+    <img src="img/8.png" alt="Foto de perfil 8" class="foto-perfil" data-src="img/8.png">
+</div>
+        <input type="text" id="input-nome-jogador" placeholder="Nome do jogador">
+        <button id="salvar-nome">Salvar</button>
+    </div>
+
+    <script src="perguntas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
